@@ -1,0 +1,187 @@
+% 1.2 SỬ dụng tam thức bậc hai
+
+\begin{frame}{1.2 SỬ DỤNG TAM THỨC BẬC HAI \hspace{3cm}  66. Đặng Hồng Thái} 
+     \begin{block}{Định lí về dấu của tam thức bậc hai}
+            \pause
+        Xét $f(x)=ax^2+bx+c  (a\ne 0)$ \\  \pause
+        \vspace{0,4cm}
+        $f(x)=a\left(x^2+\dfrac{b}{a}.x+\dfrac{c}{a}\right)$ 
+        $=a\left(x^2+2.x.\dfrac{b}{2a}+\dfrac{b^2}{4a^2}-\dfrac{b^2}{4a^2}+\dfrac{c}{a}\right)$ \pause
+        $=a\left[\left(x+\dfrac{b}{2a}\right)^2-\dfrac{b^2-4ac}{4a^2}\right]$  \\
+        \vspace{0,4cm} \pause
+        $f(x)=a\left[\left(x+\dfrac{b}{2a}\right)^2-\dfrac{\Delta}{4a^2}\right]$ \\
+        \pause
+        \begin{center}
+             \begin{tabular}{|c|c|c|}
+             \hline
+             & $a>0$ & $a<0$  \\
+             \hline
+             $\Delta<0$ & $f(x)>0$ & $f(x)<0$ \\  
+             \hline
+             \pause
+             $\Delta = 0$ & $f(x) \geq 0$ & $f(x) \leq 0$ \\ 
+             \hline
+             \pause
+             $\Delta>0$ & $f(x)=0$ có hai nghiệm $x_1<x_2$ & $f(x)=0$ có hai nghiệm $x_1<x_2$ \\
+             \hline
+            \end{tabular}
+        \end{center}
+    \end{block}
+\end{frame}
+
+
+\begin{frame}{1.2 SỬ DỤNG TAM THỨC BẬC HAI \hspace{3cm}  66. Đặng Hồng Thái} 
+%\framesubtitle{} 
+    \begin{block}{Định lí về dấu của tam thức bậc hai}
+        \textbf{Định lí 1.}  $f(x)>0$ với mọi $x$ khi và chỉ khi 
+                $\begin{cases}
+		 	a>0 \\
+		 	\Delta <0
+		 	\end{cases}$    \\
+         \textbf{Định lí 2.}  $f(x)\geq0$ với mọi $x$ khi và chỉ khi 
+                $\begin{cases}
+		 	a>0 \\
+		 	\Delta \leq0
+		 	\end{cases}$    \\
+         \textbf{Định lí 3.}  $f(x)<0$ với mọi $x$ khi và chỉ khi 
+                $\begin{cases}
+		 	a<0 \\
+		 	\Delta <0
+		 	\end{cases}$    \\
+         \textbf{Định lí 4.}  $f(x)\leq0$ với mọi $x$ khi và chỉ khi 
+                $\begin{cases}
+		 	a<0 \\
+		 	\Delta \leq0
+		 	\end{cases}$ \\
+         \textbf{Định lí 5.}  $f(x)=0$ có nghiệm $x_1<x_2$ khi và chỉ khi           $\Delta\geq 0$. Khi đó \\
+                \hspace{2cm} $f(x) = a(x-x_1)(x-x_2) \text{và} \begin{cases}
+		 	x_1+x_2=-\dfrac{b}{a} \\
+		 	x_1x_2=\dfrac{c}{a}
+		 	\end{cases}$
+    \end{block} 
+\end{frame}
+
+
+\begin{frame}{1.2 SỬ DỤNG TAM THỨC BẬC HAI \hspace{3cm}  66. Đặng Hồng Thái} 
+%\framesubtitle{} 
+    \begin{block}{Ví dụ 1}
+        Cho $a,b$ là các số thực bất kì. Chứng minh rằng:
+        \begin{center}
+            $x^2y^4+2(x^2+2)y^2+4xy+x^2\geq4xy^3$
+        \end{center}
+    \end{block} 
+    \begin{center}
+        \textbf{Lời giải:}
+    \end{center}
+    \pause
+        Bất đẳng thức cần chứng minh tương đương với \\
+        \vspace{0,2cm}
+        \hspace{1cm} $(y^4+2y^2+1)x^2+(4y-4y^3)x+4y^2\geq0$ \\ \pause
+        \vspace{0,2cm}
+        Xét $f(x)=(y^4+2y^2+1)x^2+(4y-4y^3)x+4y^2$ \\ \pause
+        \vspace{0,2cm}
+        \hspace{1cm} $ y^4+2y^2+1=(y^2+1)^2>0$ với mọi $y$ \\ \pause
+        \vspace{0,2cm}
+        \hspace{1cm} $\Delta' = (2y-2y^3)^2-(y^4+2y^2+1).4y^2 = -16y^4\leq0$ với mọi $y$ \\ \pause
+        \vspace{0,2cm}
+        Suy ra $f(x)\geq0$ với mọi $x,y$. Hay bất đằng thức ban đầu được chứng minh.
+\end{frame}
+   
+
+\begin{frame}{1.2 SỬ DỤNG TAM THỨC BẬC HAI \hspace{3cm}  66. Đặng Hồng Thái} 
+%\framesubtitle{} 
+    \begin{block}{Ví dụ 2}
+        Cho $a,b,c,d$ là các số thực thỏa mãn $a+d=b+c$. Chứng minh rằng: Nếu tồn tại số thực $m$ sao cho $2m>|ad-bc|$ thì với mọi $x\in \mathbb{R} $ ta luôn có : \\
+        \begin{center}
+            $(x-a)(x-b)(x-c)(x-d)+m^2\geq0$
+        \end{center}
+    \end{block} 
+    \begin{center}
+        \textbf{Lời giải:}
+    \end{center}
+    \pause
+        Bất đẳng thức cần chứng minh tương đương với \\
+        \vspace{0,2cm}
+        \hspace{1cm} $[(x-a)(x-d)].[(x-b)(x-c)]+m^2\geq0$ \\ \pause
+        \vspace{0,2cm}
+        \hspace{1cm} $\Leftrightarrow [x^2-(a+d)x+ad].[x^2-(b+c)x+bc]+m^2\geq0$ \\
+        \vspace{0,2cm} \pause
+        Đặt $y=x^2-(a+d)x=x^2-(b+c)x$.  \pause Khi đó ta được bất đẳng thức \\ 
+        \vspace{0,2cm}
+        \hspace{1cm} $(y+ad)(y+bc)+m^2\geq0$  
+        \hspace{1cm} $\Leftrightarrow y^2+(ad+bc)y+abcd+m^2\geq0$ \\
+\end{frame}
+
+
+\begin{frame}{1.2 SỬ DỤNG TAM THỨC BẬC HAI \hspace{3cm}  66. Đặng Hồng Thái} 
+%\framesubtitle{} 
+    \begin{block}{Ví dụ 2}
+        Cho $a,b,c,d$ là các số thực thỏa mãn $a+d=b+c$. Chứng minh rằng: Nếu tồn tại số thực $m$ sao cho $2m>|ad-bc|$ thì với mọi $x\in \mathbb{R} $ ta luôn có: \\
+        \begin{center}
+            $(x-a)(x-b)(x-c)(x-d)+m^2\geq0$
+        \end{center}
+    \end{block} 
+    \begin{center}
+        \textbf{Lời giải:}
+    \end{center}
+        Xét $f(y)=y^2+(ad+bc)y+abcd+m^2$ \\
+        \vspace{0,2cm} \pause
+        \hspace{1cm} $\Delta = (ad+bc)^2-4(abcd+m^2)=(ad-bc)^2-4m^2 $ \\
+        \vspace{0,2cm} \pause
+        Vì $2m>|ad-bc|$ nên $4m^2\geq(ad-bc)^2$. Suy ra $\Delta\leq0$ \\
+        \vspace{0,2cm} \pause
+        Vậy $f(y)\geq0$ với mọi $y\in \mathbb{R}$. \\
+        \vspace{0,2cm}
+        Hay bất đẳng thức ban đầu được chứng minh. 
+\end{frame}
+
+\begin{frame}{1.2 SỬ DỤNG TAM THỨC BẬC HAI \hspace{3cm}  66. Đặng Hồng Thái} 
+%\framesubtitle{} 
+    \begin{block}{Bài tập tương tự}
+        \textbf{Bài 1:} Cho $a,b,c$ là các số thực thỏa mãn $a+b+c=1$. Chứng minh rằng:
+        \begin{center}
+            $(3a+4b+5c)^2\geq44(ab+bc+ca)$
+        \end{center}
+    \end{block} 
+    \pause
+    \begin{center}
+        \textbf{Hướng dẫn giải:}
+    \end{center}
+        Từ $a+b+c=1$ ta có $c=1-a-b$ \\
+        Khi đó bất đẳng thức cần chứng minh tương đương với \\
+        \hspace{0,5cm} $(3a+4b+5-5a-5b)^2\geq44ab+44(a+b)(1-a-b)$ \\
+        \vspace{0,1cm}
+        \hspace{0,5cm}Hay $48a^2+16(3b-4)a+45b^2-54b+25\geq0$ \\
+        \vspace{0,1cm}
+        Xét $f(a)=48a^2+16(3b-4)a+45b^2-54b+25$ \\
+        \vspace{0,1cm}
+        \hspace{0,5cm} $\Delta' = 64(3b-4)^2-48.(45b^2-54b+25)=-176(3b-1)^2 \leq0$ \\
+        \vspace{0,1cm}
+        Vậy $f(a)\geq0$ với mọi $a,b$. 
+        Hay bất đẳng thức ban đầu được chứng minh. 
+\end{frame}
+
+
+\begin{frame}{1.2 SỬ DỤNG TAM THỨC BẬC HAI \hspace{3cm}  66. Đặng Hồng Thái} 
+%\framesubtitle{} 
+    \begin{block}{Bài tập tương tự}
+        \textbf{Bài 2:} Cho $a,b,c$ là độ dài ba cạnh của một tam giác. Chứng minh rằng, nếu $ax+by+cz=0$ thì $ayz+bzx+cxy\leq0$
+    \end{block} 
+    \pause
+    \begin{center}
+        \textbf{Hướng dẫn giải:}
+    \end{center}
+        Từ $ax+by+cz=0$ ta có $z=\dfrac{-ax-by}{c}$ \\
+        Khi đó bất đẳng thức cần chứng minh tương đương với \\
+        \hspace{0,5cm} $ay.\dfrac{-ax-by}{c}+bx.\dfrac{-ax-by}{c}+cxy\leq0$ 
+        Hay $-abx^2-(a^2y+b^2y-c^2y)x-aby^2\leq0$ \\
+        Xét $f(x)=-abx^2-y(a^2+b^2-c^2)x-aby^2$ \\
+        \vspace{0,2cm}
+        \hspace{0,5cm} $\Delta = y^2(a^2+b^2-c^2)^2-4a^2b^2y^2
+        = y^2 (2ab.\cos{C})^2-4a^2b^2y^2=4a^2b^2y^2(\cos^2{C}-1)\leq0$ \\
+        \vspace{0,2cm}
+        Vậy $f(x)\geq0$ với mọi $x,y$. 
+        Hay bất đẳng thức ban đầu được chứng minh. 
+\end{frame}
+
+
